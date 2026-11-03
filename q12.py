@@ -2,14 +2,12 @@ import utils as u
 from q11 import ehPrimo
 
 def f(N):
-    x = []
-    f(N, list)
+	return [x for x in range(1, N) if ehPrimo(x)]
 
-def aux(N, list)
-    
+# pesquisar o outro jeito de fazer 
 
 def main():
-    print(ehPrimo(17))
+    print(f(15))
 
 if __name__=="__main__":
     main()
