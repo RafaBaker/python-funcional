@@ -6,10 +6,10 @@ def invertelista(list):
     # print(list)
     if not list: # ve se a lista está vazia
         return
-    return concatena(invertelista() u.head(list))
+    return concatena(invertelista(u.tail(list)), [u.head(list)])
 
 def main():
-    list = [1, -2, -3, -4, 6]
+    list = [1, 2]
     print(invertelista(list))
 
 if __name__=="__main__":
