@@ -2,7 +2,7 @@ import utils as u
 from q11 import ehPrimo
 
 def f(N):
-	return [x for x in range(1, N) if ehPrimo(x)]
+	return [x for x in range(2, N) if ehPrimo(x)]
 
 # pesquisar o outro jeito de fazer 
 
