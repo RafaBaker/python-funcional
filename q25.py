@@ -1,3 +1,4 @@
+import utils as u
 from q24 import primes
 
 
@@ -9,8 +10,8 @@ def agrupa_fatores(lista):
     if not lista:
         return []
 
-    return [(lista[0], conta_freq(lista[0], lista))] + agrupa_fatores(
-        list(filter(lambda x: x != lista[0], lista))
+    return [(u.head(lista), conta_freq(u.head(lista), lista))] + agrupa_fatores(
+        list(filter(lambda x: x != u.head(lista), lista))
     )
 
 

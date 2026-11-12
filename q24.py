@@ -1,5 +1,6 @@
 import utils as u
 from q11 import ehPrimo
+from q12 import f
 
 
 def alguem_divide(n, primos):
@@ -14,7 +15,7 @@ def alguem_divide(n, primos):
 	if n % u.head(primos) == 0:
 		return u.head(primos)
 	
-	return alguem_divide(n, primos[1:])
+	return alguem_divide(n, u.tail(primos))
 
 def primes(n):
 	
@@ -22,7 +23,7 @@ def primes(n):
 		return []
 
 	# print(alguem_divide(n, f(n+1)))
-	divisor = alguem_divide(n, list(filter(ehPrimo, range(2, n + 1))))
+	divisor = alguem_divide(n, f(n+1));
 	return [divisor] + primes(n // divisor)
 
 def main():
