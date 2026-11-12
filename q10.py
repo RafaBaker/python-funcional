@@ -1,5 +1,6 @@
 import utils as u
 
+
 def f(list):
     if not list: # ve se a lista está vazia
         return 0
