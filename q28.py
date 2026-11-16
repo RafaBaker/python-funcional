@@ -1,4 +1,4 @@
-from q10 import f
+from len import f_len
 from utils import *
 
 
@@ -23,7 +23,7 @@ def drop(lista, n):
     return drop(tail(lista), n-1)
 
 def splitHalf(lista):
-    metade = f(lista) // 2
+    metade = f_len(lista) // 2
     return [take(lista, metade)] + [drop(lista, metade)]
 
 def main():
