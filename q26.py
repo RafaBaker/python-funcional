@@ -1,5 +1,6 @@
 import utils as u
 
+
 # retorna o indice que ele aparece
 def index(n, lista):
 
@@ -46,7 +47,7 @@ def main():
     print(index(2, lista))
     print(drop(lista, 1))
 
-    print(splitToken(2, [1,2,3,4,2,5,67,8,9,0,3]))
+    print(splitToken(2, [1,2,2,3,4,2,5,67,8,9,0,3]))
 
 
 if __name__ == "__main__":
