@@ -37,8 +37,8 @@ def joinToken(n, lista):
     if not lista:
         return []
 
-    # if not init(lista):
-    #     return []
+    if not tail(lista):
+        return head(lista)
 
     return head(lista) + [n] + joinToken(n, tail(lista))
 
