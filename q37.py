@@ -5,15 +5,16 @@ from q36 import *
 
 def decode(data):
 
-    return reduce(lambda x, y: x+y, list(map(aux, data)))
+    return reduce(
+        lambda x, y: x+y,
+        list(map(
+            lambda x:
+                head(x) * head(tail(x)),
+                data)))
 
-def aux(tupla):
-    
-    return head(tupla) * head(tail(tupla))
 
 def main():
     
-    print(aux((4, 'a')))
     
     print(encode("aaaabccaadeeee"))
     print(decode(encode("aaaabccaadeeee")))
